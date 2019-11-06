@@ -6,6 +6,7 @@ import {HeightEqualExample} from '../screens/LargeList/HeightEqualExample';
 import { MessageExample } from '../screens/LargeList/MessageExample';
 import { ContactExample } from '../screens/LargeList/ContactExample';
 import { MenuListExample } from '../screens/LargeList/MenuListExample';
+import { RefreshAndLoadingExample } from '../screens/LargeList/RefreshAndLoadingExample';
 
 const LoginNavigator = createStackNavigator({
   Login: { screen: LoginScreen, navigationOptions: () => ({ header: null })},
@@ -14,6 +15,7 @@ const LoginNavigator = createStackNavigator({
   MessageExample: { screen: MessageExample, navigationOptions: () => ({ header: null })},
   ContactExample: { screen: ContactExample, navigationOptions: () => ({ header: null })},
   MenuListExample: { screen: MenuListExample, navigationOptions: () => ({ header: null })},
+  RefreshAndLoadingExample: { screen: RefreshAndLoadingExample, navigationOptions: () => ({ header: null })},
 
 });
 
