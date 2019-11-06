@@ -13,8 +13,10 @@ import { FlatListExample } from '../screens/LargeList/FlatListExample';
 import { StickyFormExample } from '../screens/LargeList/StickyFormExample';
 import { WaterfallListExample } from '../screens/LargeList/WaterfallListExample';
 import { PictureExample } from '../screens/LargeList/PictureExample';
+import ButtonMore from '../screens/CustomLoadMore/ButtonMore';
 
 const LoginNavigator = createStackNavigator({
+
   Login: { screen: LoginScreen, navigationOptions: () => ({ header: null })},
   HeightUnequalExample: { screen: HeightUnequalExample, navigationOptions: () => ({ header: null })},
   HeightEqualExample: { screen: HeightEqualExample, navigationOptions: () => ({ header: null })},
@@ -28,6 +30,8 @@ const LoginNavigator = createStackNavigator({
   StickyFormExample: { screen: StickyFormExample, navigationOptions: () => ({ header: null })},
   WaterfallListExample: { screen: WaterfallListExample, navigationOptions: () => ({ header: null })},
   PictureExample: { screen: PictureExample, navigationOptions: () => ({ header: null })},
+
+  ButtonMore: { screen: ButtonMore, navigationOptions: () => ({ header: null })},
 
 });
 
