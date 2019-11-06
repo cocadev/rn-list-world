@@ -39,7 +39,7 @@ export default class AutoLoadRefresh extends Component {
         const url = `https://api.stackexchange.com/2.2/users?page=1&order=desc&sort=reputation&site=stackoverflow`;
         axios.get(url)
             .then(res => {
-
+                this.page = 1
                 this.setState({
                     isRefreshing: false,
                     data: res.data.items
@@ -64,6 +64,7 @@ export default class AutoLoadRefresh extends Component {
         }
         return (
             <View style={{ flex: 1, flexDirection: 'column' }}>
+                {this.renderHeader()}
                 <FlatList
                     data={this.state.data}
                     extraData={this.state}
@@ -125,8 +126,15 @@ export default class AutoLoadRefresh extends Component {
         );
     };
 
+    renderHeader = () => {
+        return (
+            <View style={{ backgroundColor: '#000', alignItems: 'center',padding: 10 }}>
+                <Text style={{ color: '#fff', fontSize: 16 }}>{"Current page = " + this.page + " | Total Count = " + this.state.data.length}</Text>
+            </View>
+        );
+    };
+
     renderFooter = () => {
-        //it will show indicator at the bottom of the list when data is loading otherwise it returns null
         if (!this.state.loading) return null;
         return (
             <ActivityIndicator
