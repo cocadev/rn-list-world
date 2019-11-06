@@ -11,7 +11,8 @@ const largeList = [
   'RefreshAndLoadingExample',
   'IntensiveSectionExample',
   'ChatExample',
-  'FlatListExample'
+  'FlatListExample',
+  'StickyFormExample'
 ]
 
 export default class Login extends Component {

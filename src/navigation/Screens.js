@@ -10,6 +10,7 @@ import { RefreshAndLoadingExample } from '../screens/LargeList/RefreshAndLoading
 import { IntensiveSectionExample } from '../screens/LargeList/IntensiveSectionExample';
 import { ChatExample } from '../screens/LargeList/ChatExample';
 import { FlatListExample } from '../screens/LargeList/FlatListExample';
+import { StickyFormExample } from '../screens/LargeList/StickyFormExample';
 
 const LoginNavigator = createStackNavigator({
   Login: { screen: LoginScreen, navigationOptions: () => ({ header: null })},
@@ -22,6 +23,7 @@ const LoginNavigator = createStackNavigator({
   IntensiveSectionExample: { screen: IntensiveSectionExample, navigationOptions: () => ({ header: null })},
   ChatExample: { screen: ChatExample, navigationOptions: () => ({ header: null })},
   FlatListExample: { screen: FlatListExample, navigationOptions: () => ({ header: null })},
+  StickyFormExample: { screen: StickyFormExample, navigationOptions: () => ({ header: null })},
 
 });
 
