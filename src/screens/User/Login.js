@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 import styles from './loginStyles';
 
+const largeList = [
+  'HeightUnequalExample',
+  'HeightEqualExample'
+]
+
 class Login extends Component {
   
   render() {
