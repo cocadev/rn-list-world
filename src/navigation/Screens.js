@@ -13,7 +13,7 @@ import { FlatListExample } from '../screens/LargeList/FlatListExample';
 import { StickyFormExample } from '../screens/LargeList/StickyFormExample';
 import { WaterfallListExample } from '../screens/LargeList/WaterfallListExample';
 import { PictureExample } from '../screens/LargeList/PictureExample';
-import ButtonMore from '../screens/CustomLoadMore/ButtonMore';
+import AutoLoadRefresh from '../screens/CustomLoadMore/AutoLoadRefresh';
 
 const LoginNavigator = createStackNavigator({
 
@@ -31,7 +31,7 @@ const LoginNavigator = createStackNavigator({
   WaterfallListExample: { screen: WaterfallListExample, navigationOptions: () => ({ header: null })},
   PictureExample: { screen: PictureExample, navigationOptions: () => ({ header: null })},
 
-  ButtonMore: { screen: ButtonMore, navigationOptions: () => ({ header: null })},
+  AutoLoadRefresh: { screen: AutoLoadRefresh, navigationOptions: () => ({ header: null })},
 
 });
 

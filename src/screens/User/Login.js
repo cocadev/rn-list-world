@@ -2,19 +2,29 @@ import React, { Component } from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 import styles from './loginStyles';
 
-const largeList = [
-  'HeightUnequalExample',
-  'HeightEqualExample',
-  'MessageExample',
-  'ContactExample',
-  'MenuListExample',
-  'RefreshAndLoadingExample',
-  'IntensiveSectionExample',
-  'ChatExample',
-  'FlatListExample',
-  'StickyFormExample',
-  'WaterfallListExample',
-  'PictureExample'
+const MyList = [
+  {
+    title: 'LargeListExamples',
+    items: [
+      'HeightUnequalExample',
+      'HeightEqualExample',
+      'MessageExample',
+      'ContactExample',
+      'MenuListExample',
+      'RefreshAndLoadingExample',
+      'IntensiveSectionExample',
+      'ChatExample',
+      'FlatListExample',
+      'StickyFormExample',
+      'WaterfallListExample',
+      'PictureExample'
+    ]
+  }, {
+    title: 'Pagenation',
+    items: [
+      'AutoLoadRefresh',
+    ]
+  }
 ]
 
 export default class Login extends Component {
@@ -23,19 +33,21 @@ export default class Login extends Component {
 
     return (
       <View style={styles.container}>
-        <Text style={styles.title}>LargeListExamples</Text>
         {
-          largeList.map((item, index) =>
-            <TouchableOpacity
-              key={index}
-              style={styles.button}
-              onPress={() => this.props.navigation.navigate(item)}
-            >
-              <Text>{item}</Text>
-            </TouchableOpacity>
+          MyList.map((item, index) =>
+            <View key={index}>
+              <Text style={styles.title}>{item.title}</Text>
+              {item.items.map((k, ix) =>
+                <TouchableOpacity
+                  key={ix}
+                  style={styles.button}
+                  onPress={() => this.props.navigation.navigate(k)}
+                >
+                  <Text style={styles.buttonText}>{k}</Text>
+                </TouchableOpacity>)}
+            </View>
           )
         }
-
       </View>
     );
   }
