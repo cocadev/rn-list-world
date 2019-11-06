@@ -7,22 +7,26 @@ const largeList = [
   'HeightEqualExample'
 ]
 
-class Login extends Component {
-  
+export default class Login extends Component {
+
   render() {
-   
+
     return (
       <View style={styles.container}>
-          <Text style={styles.title}>LargeListExamples</Text>
-          <TouchableOpacity style={styles.button} onPress={()=>this.props.navigation.navigate('HeightUnequalExample')}>
-             <Text>HeightUnequalExample</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.button} onPress={()=>this.props.navigation.navigate('HeightEqualExample')}>
-             <Text>HeightEqualExample</Text>
-          </TouchableOpacity>
+        <Text style={styles.title}>LargeListExamples</Text>
+        {
+          largeList.map((item, index) =>
+            <TouchableOpacity
+              key={index}
+              style={styles.button}
+              onPress={() => this.props.navigation.navigate(item)}
+            >
+              <Text>{item}</Text>
+            </TouchableOpacity>
+          )
+        }
+
       </View>
     );
   }
 }
-
-export default Login;

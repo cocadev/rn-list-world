@@ -11,9 +11,10 @@ export default {
   button: {
     fontSize: 20,
     color: '#222',
-    borderWidth: 2,
+    borderWidth: 1,
     borderColor: 'purple',
     borderRadius: 12,
-    padding: 3
+    padding: 3,
+    marginVertical: 2
   }
 };
