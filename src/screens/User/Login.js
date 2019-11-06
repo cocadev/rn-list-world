@@ -23,8 +23,13 @@ const MyList = [
     title: 'Pagenation',
     items: [
       'AutoLoadRefresh',
-      'LoadMore'
+      'LoadMore',
+      'InfiniteScroll'
     ]
+  },
+  {
+    title: 'react-native-fast-image',
+    items: []
   }
 ]
 
