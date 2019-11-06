@@ -12,6 +12,7 @@ import { ChatExample } from '../screens/LargeList/ChatExample';
 import { FlatListExample } from '../screens/LargeList/FlatListExample';
 import { StickyFormExample } from '../screens/LargeList/StickyFormExample';
 import { WaterfallListExample } from '../screens/LargeList/WaterfallListExample';
+import { PictureExample } from '../screens/LargeList/PictureExample';
 
 const LoginNavigator = createStackNavigator({
   Login: { screen: LoginScreen, navigationOptions: () => ({ header: null })},
@@ -26,6 +27,7 @@ const LoginNavigator = createStackNavigator({
   FlatListExample: { screen: FlatListExample, navigationOptions: () => ({ header: null })},
   StickyFormExample: { screen: StickyFormExample, navigationOptions: () => ({ header: null })},
   WaterfallListExample: { screen: WaterfallListExample, navigationOptions: () => ({ header: null })},
+  PictureExample: { screen: PictureExample, navigationOptions: () => ({ header: null })},
 
 });
 

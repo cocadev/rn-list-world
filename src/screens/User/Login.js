@@ -13,7 +13,8 @@ const largeList = [
   'ChatExample',
   'FlatListExample',
   'StickyFormExample',
-  'WaterfallListExample'
+  'WaterfallListExample',
+  'PictureExample'
 ]
 
 export default class Login extends Component {
