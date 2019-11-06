@@ -4,7 +4,8 @@ import styles from './loginStyles';
 
 const largeList = [
   'HeightUnequalExample',
-  'HeightEqualExample'
+  'HeightEqualExample',
+  'MessageExample'
 ]
 
 export default class Login extends Component {
