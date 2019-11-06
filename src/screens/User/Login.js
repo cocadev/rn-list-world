@@ -23,6 +23,7 @@ const MyList = [
     title: 'Pagenation',
     items: [
       'AutoLoadRefresh',
+      'LoadMore'
     ]
   }
 ]

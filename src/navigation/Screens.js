@@ -14,6 +14,7 @@ import { StickyFormExample } from '../screens/LargeList/StickyFormExample';
 import { WaterfallListExample } from '../screens/LargeList/WaterfallListExample';
 import { PictureExample } from '../screens/LargeList/PictureExample';
 import AutoLoadRefresh from '../screens/CustomLoadMore/AutoLoadRefresh';
+import LoadMore from '../screens/CustomLoadMore/LoadMore';
 
 const LoginNavigator = createStackNavigator({
 
@@ -32,6 +33,7 @@ const LoginNavigator = createStackNavigator({
   PictureExample: { screen: PictureExample, navigationOptions: () => ({ header: null })},
 
   AutoLoadRefresh: { screen: AutoLoadRefresh, navigationOptions: () => ({ header: null })},
+  LoadMore: { screen: LoadMore, navigationOptions: () => ({ header: null })},
 
 });
 
