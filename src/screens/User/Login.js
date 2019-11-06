@@ -29,7 +29,17 @@ const MyList = [
   },
   {
     title: 'react-native-fast-image',
-    items: ['FastImageExample']
+    items: [
+      'FastImageExample',
+      'FastImageGrid',
+      'DefaultImageGrid'
+    ]
+  },
+  {
+    title: 'react-native-masonry',
+    items: [
+      'MasonryList',
+    ]
   }
 ]
 

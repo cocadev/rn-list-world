@@ -17,6 +17,9 @@ import AutoLoadRefresh from '../screens/CustomLoadMore/AutoLoadRefresh';
 import LoadMore from '../screens/CustomLoadMore/LoadMore';
 import InfiniteScroll from '../screens/CustomLoadMore/InfiniteScroll';
 import FastImageExample from '../screens/FastImage/FastImageExamples';
+import FastImageGrid from '../screens/FastImage/FastImageGrid';
+import DefaultImageGrid from '../screens/FastImage/DefaultImageGrid';
+import MasonryList from '../screens/react-native-masonry/MasonryList';
 
 const LoginNavigator = createStackNavigator({
 
@@ -37,7 +40,12 @@ const LoginNavigator = createStackNavigator({
   AutoLoadRefresh: { screen: AutoLoadRefresh, navigationOptions: () => ({ header: null })},
   LoadMore: { screen: LoadMore, navigationOptions: () => ({ header: null })},
   InfiniteScroll: { screen: InfiniteScroll, navigationOptions: () => ({ header: null })},
+
   FastImageExample: { screen: FastImageExample, navigationOptions: () => ({ header: null })},
+  FastImageGrid: { screen: FastImageGrid, navigationOptions: () => ({ header: null })},
+  DefaultImageGrid: { screen: DefaultImageGrid, navigationOptions: () => ({ header: null })},
+
+  MasonryList: { screen: MasonryList, navigationOptions: () => ({ header: null })},
 
 });
 
