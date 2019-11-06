@@ -11,6 +11,7 @@ import { IntensiveSectionExample } from '../screens/LargeList/IntensiveSectionEx
 import { ChatExample } from '../screens/LargeList/ChatExample';
 import { FlatListExample } from '../screens/LargeList/FlatListExample';
 import { StickyFormExample } from '../screens/LargeList/StickyFormExample';
+import { WaterfallListExample } from '../screens/LargeList/WaterfallListExample';
 
 const LoginNavigator = createStackNavigator({
   Login: { screen: LoginScreen, navigationOptions: () => ({ header: null })},
@@ -24,6 +25,7 @@ const LoginNavigator = createStackNavigator({
   ChatExample: { screen: ChatExample, navigationOptions: () => ({ header: null })},
   FlatListExample: { screen: FlatListExample, navigationOptions: () => ({ header: null })},
   StickyFormExample: { screen: StickyFormExample, navigationOptions: () => ({ header: null })},
+  WaterfallListExample: { screen: WaterfallListExample, navigationOptions: () => ({ header: null })},
 
 });
 
