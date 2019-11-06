@@ -9,7 +9,8 @@ const largeList = [
   'ContactExample',
   'MenuListExample',
   'RefreshAndLoadingExample',
-  'IntensiveSectionExample'
+  'IntensiveSectionExample',
+  'ChatExample'
 ]
 
 export default class Login extends Component {
