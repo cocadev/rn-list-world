@@ -1,20 +1,18 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import {ImageBackground, StyleSheet, Text, TouchableOpacity, View} from "react-native";
 import { LargeList } from "react-native-largelist-v3";
-import { CommonLottieHeader, CommonLottieFooter } from "react-native-spring-scrollview/Customize";
 
-export default class HeightUnequalExample extends React.Component {
+export class HeightEqualExample extends React.Component {
   static navigationOptions = {
-    title: "HeightUnequalExample"
+    title: "HeightEqualExample"
   };
 
-  _sectionCount = 1;
-  _rowCount = 5;
-  _list: LargeList;
+  _sectionCount = 10;
+  _rowCount = 10;
 
   constructor(props) {
     super(props);
-    this.state = { select: 0 };
+    this.state = {};
   }
 
   render() {
@@ -29,25 +27,20 @@ export default class HeightUnequalExample extends React.Component {
     return (
       <LargeList
         data={data}
-        ref={ref => (this._list = ref)}
+        initialContentOffset={{x:0,y:3000}}
         heightForSection={() => 50}
         renderSection={this._renderSection}
-        heightForIndexPath={({ section: section, row: row }) => (row % 2 ? 50 : 100)}
+        heightForIndexPath={() => 50}
         renderIndexPath={this._renderIndexPath}
-        refreshHeader={CommonLottieHeader}
-        loadingFooter={CommonLottieFooter}
-        onRefresh={this._onRefresh}
-        onLoading={this._onLoading}
+        renderHeader={this._renderHeader}
+        renderFooter={this._renderFooter}
+        renderScaleHeaderBackground={this._renderHeaderBackground}
+        // onTouchBegin={()=>console.log("onTouchBegin")}
+        // onTouchEnd={()=>console.log("onTouchEnd")}
+        // onScroll={({nativeEvent:{contentOffset:{x,y}}})=>console.log("onScroll:",x,y)}
       />
     );
   }
-
-  _onRefresh = () => {
-    setTimeout(() => this._list.endRefresh(), 2000);
-  };
-  _onLoading = () => {
-    setTimeout(() => this._list.endLoading(), 2000);
-  };
 
   _renderSection = (section: number) => {
     return (
@@ -61,17 +54,44 @@ export default class HeightUnequalExample extends React.Component {
 
   _renderIndexPath = ({ section: section, row: row }) => {
     return (
-      <View style={styles.row}>
+      <TouchableOpacity style={styles.row}>
         <Text>
           Section {section} Row {row}
         </Text>
         <View style={styles.line} />
+      </TouchableOpacity>
+    );
+  };
+
+  _renderHeaderBackground = () => {
+    return <ImageBackground style={{ flex: 1 }} source={require("./icons/ScaleHeader.jpg")} />;
+  };
+
+  _renderHeader = () => {
+    return (
+      <View>
+        <Text style={styles.header}>I am header</Text>
+      </View>
+    );
+  };
+
+  _renderFooter = () => {
+    return (
+      <View>
+        <Text style={styles.header}>I am Footer</Text>
       </View>
     );
   };
 }
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1
+  },
+  header: {
+    alignSelf: "center",
+    marginVertical: 50
+  },
   section: {
     flex: 1,
     backgroundColor: "gray",

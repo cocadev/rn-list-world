@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 import styles from './loginStyles';
 
-
 class Login extends Component {
   
   render() {
@@ -12,6 +11,9 @@ class Login extends Component {
           <Text style={styles.title}>LargeListExamples</Text>
           <TouchableOpacity style={styles.button} onPress={()=>this.props.navigation.navigate('HeightUnequalExample')}>
              <Text>HeightUnequalExample</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.button} onPress={()=>this.props.navigation.navigate('HeightEqualExample')}>
+             <Text>HeightEqualExample</Text>
           </TouchableOpacity>
       </View>
     );
