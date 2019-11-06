@@ -16,6 +16,7 @@ import { PictureExample } from '../screens/LargeList/PictureExample';
 import AutoLoadRefresh from '../screens/CustomLoadMore/AutoLoadRefresh';
 import LoadMore from '../screens/CustomLoadMore/LoadMore';
 import InfiniteScroll from '../screens/CustomLoadMore/InfiniteScroll';
+import FastImageExample from '../screens/FastImage/FastImageExamples';
 
 const LoginNavigator = createStackNavigator({
 
@@ -36,6 +37,7 @@ const LoginNavigator = createStackNavigator({
   AutoLoadRefresh: { screen: AutoLoadRefresh, navigationOptions: () => ({ header: null })},
   LoadMore: { screen: LoadMore, navigationOptions: () => ({ header: null })},
   InfiniteScroll: { screen: InfiniteScroll, navigationOptions: () => ({ header: null })},
+  FastImageExample: { screen: FastImageExample, navigationOptions: () => ({ header: null })},
 
 });
 

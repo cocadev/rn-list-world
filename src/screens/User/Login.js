@@ -29,7 +29,7 @@ const MyList = [
   },
   {
     title: 'react-native-fast-image',
-    items: []
+    items: ['FastImage']
   }
 ]
 
