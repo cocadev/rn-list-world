@@ -6,7 +6,8 @@ const largeList = [
   'HeightUnequalExample',
   'HeightEqualExample',
   'MessageExample',
-  'ContactExample'
+  'ContactExample',
+  'MenuListExample'
 ]
 
 export default class Login extends Component {
