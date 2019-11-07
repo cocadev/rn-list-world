@@ -56,6 +56,15 @@ const MyList = [
     title: 'react-native-expandable-section-flatlist',
     items: ['ExpandableListScreen'],
   },
+  {
+    title: 'react-native-pagination',
+    items: [
+      'VerticalBasicFlatList',
+      'VerticalAdvancedFlatList',
+      'HorizontalAdvancedFlatList',
+      'HorizontalPagedFlatListExample',
+    ],
+  },
 ];
 
 export default class Login extends Component {

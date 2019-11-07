@@ -28,6 +28,10 @@ import OrzhtmlScreen from '../screens/react-native-orzhtml-listview/Orzhtml';
 import UltimateListViewScreen from '../screens/react-native-ultimate-listview/UltimatelistView';
 import TabSectionScreen from '../screens/react-native-tabs-section-list/TabSectionScreen';
 import ExpandableListScreen from '../screens/react-native-expandable-section-flatlist/ExpandableList';
+import HorizontalAdvancedFlatList from '../screens/react-native-pagination/HorizontalAdvancedFlatList';
+import HorizontalPagedFlatListExample from '../screens/react-native-pagination/HorizontalPagedFlatListExample';
+import VerticalAdvancedFlatList from '../screens/react-native-pagination/VerticalAdvancedFlatList';
+import VerticalBasicFlatList from '../screens/react-native-pagination/VerticalBasicFlatList';
 
 const LoginNavigator = createStackNavigator({
   Login: {
@@ -143,6 +147,23 @@ const LoginNavigator = createStackNavigator({
   },
   ExpandableListScreen: {
     screen: ExpandableListScreen,
+    navigationOptions: () => ({header: null}),
+  },
+
+  HorizontalAdvancedFlatList: {
+    screen: HorizontalAdvancedFlatList,
+    navigationOptions: () => ({header: null}),
+  },
+  HorizontalPagedFlatListExample: {
+    screen: HorizontalPagedFlatListExample,
+    navigationOptions: () => ({header: null}),
+  },
+  VerticalAdvancedFlatList: {
+    screen: VerticalAdvancedFlatList,
+    navigationOptions: () => ({header: null}),
+  },
+  VerticalBasicFlatList: {
+    screen: VerticalBasicFlatList,
     navigationOptions: () => ({header: null}),
   },
 });
