@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { View, Text, TouchableOpacity, ScrollView } from 'react-native';
+import React, {Component} from 'react';
+import {View, Text, TouchableOpacity, ScrollView} from 'react-native';
 import styles from './loginStyles';
 
 const MyList = [
@@ -17,79 +17,61 @@ const MyList = [
       'FlatListExample',
       'StickyFormExample',
       'WaterfallListExample',
-      'PictureExample'
-    ]
-  }, {
+      'PictureExample',
+    ],
+  },
+  {
     title: 'Pagenation',
-    items: [
-      'AutoLoadRefresh',
-      'LoadMore',
-      'InfiniteScroll'
-    ]
+    items: ['AutoLoadRefresh', 'LoadMore', 'InfiniteScroll'],
   },
   {
     title: 'react-native-fast-image',
-    items: [
-      'FastImageExample',
-      'FastImageGrid',
-      'DefaultImageGrid'
-    ]
+    items: ['FastImageExample', 'FastImageGrid', 'DefaultImageGrid'],
   },
   {
     title: 'react-native-draggable-flatlist',
-    items: [
-      'DraggableScreen',
-    ]
+    items: ['DraggableScreen'],
   },
   {
     title: 'react-native-grid-list',
-    items: [
-      'GridListScreen',
-      'GridSimple',
-    ]
+    items: ['GridListScreen', 'GridSimple'],
   },
   {
     title: 'react-native-super-grid',
-    items: [
-      'SectionGridScreen',
-      'FlatGridScreen'
-    ]
+    items: ['SectionGridScreen', 'FlatGridScreen'],
   },
   {
     title: 'react-native-orzhtml-listview',
-    items: [
-      'OrzhtmlScreen',
-    ]
-  },{
-    title: 'react-native-ultimate-listview',
-    items: [
-      'UltimateListViewScreen',
-    ]
+    items: ['OrzhtmlScreen'],
   },
-]
+  {
+    title: 'react-native-ultimate-listview',
+    items: ['UltimateListViewScreen'],
+  },
+  {
+    title: 'react-native-tabs-section-list',
+    items: ['TabSectionScreen'],
+  },
+];
 
 export default class Login extends Component {
-
   render() {
-
     return (
       <View style={styles.container}>
         <ScrollView>
-          {
-            MyList.map((item, index) =>
-              <View key={index}>
-                <Text style={styles.title}>{item.title}</Text>
-                {item.items.map((k, ix) =>
-                  <TouchableOpacity
-                    key={ix}
-                    style={styles.button}
-                    onPress={() => this.props.navigation.navigate(k)}
-                  >
-                    <Text style={styles.buttonText}>{k}</Text>
-                  </TouchableOpacity>)}
-              </View>
-            )
-          }
+          {MyList.map((item, index) => (
+            <View key={index}>
+              <Text style={styles.title}>{item.title}</Text>
+              {item.items.map((k, ix) => (
+                <TouchableOpacity
+                  key={ix}
+                  style={styles.button}
+                  onPress={() => this.props.navigation.navigate(k)}>
+                  <Text style={styles.buttonText}>{k}</Text>
+                </TouchableOpacity>
+              ))}
+            </View>
+          ))}
         </ScrollView>
       </View>
     );
