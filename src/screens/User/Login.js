@@ -35,7 +35,12 @@ const MyList = [
       'DefaultImageGrid'
     ]
   },
- 
+  {
+    title: 'react-native-draggable-flatlist',
+    items: [
+      'DraggableScreen',
+    ]
+  },
 ]
 
 export default class Login extends Component {
