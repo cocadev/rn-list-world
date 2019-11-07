@@ -26,6 +26,7 @@
     "react": "16.9.0",
     "react-native": "0.60.5",
     "react-native-draggable-flatlist": "^1.1.9",
+    "react-native-expandable-section-flatlist": "^1.2.2",
     "react-native-fast-image": "^7.0.2",
     "react-native-gesture-handler": "^1.4.1",
     "react-native-grid-list": "^1.1.0",

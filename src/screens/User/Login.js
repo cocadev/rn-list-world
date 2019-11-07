@@ -52,6 +52,10 @@ const MyList = [
     title: 'react-native-tabs-section-list',
     items: ['TabSectionScreen'],
   },
+  {
+    title: 'react-native-expandable-section-flatlist',
+    items: ['ExpandableListScreen'],
+  },
 ];
 
 export default class Login extends Component {
