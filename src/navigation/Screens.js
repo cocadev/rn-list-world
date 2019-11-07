@@ -24,6 +24,7 @@ import GridListScreen from '../screens/react-native-grid-list/GridListScreen';
 import GridSimple from '../screens/react-native-grid-list/GridSimple';
 import SectionGridScreen from '../screens/react-native-super-grid/SectionGrid';
 import FlatGridScreen from '../screens/react-native-super-grid/FlatGrid';
+import OrzhtmlScreen from '../screens/react-native-orzhtml-listview/Orzhtml';
 
 const LoginNavigator = createStackNavigator({
 
@@ -55,6 +56,7 @@ const LoginNavigator = createStackNavigator({
 
   SectionGridScreen: { screen: SectionGridScreen, navigationOptions: () => ({ header: null })},
   FlatGridScreen: { screen: FlatGridScreen, navigationOptions: () => ({ header: null })},
+  OrzhtmlScreen: { screen: OrzhtmlScreen, navigationOptions: () => ({ header: null })},
 
   
 });
