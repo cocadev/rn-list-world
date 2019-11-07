@@ -24,6 +24,7 @@
     "react-native-draggable-flatlist": "^1.1.9",
     "react-native-fast-image": "^7.0.2",
     "react-native-gesture-handler": "^1.4.1",
+    "react-native-grid-list": "^1.1.0",
     "react-native-image-picker": "^1.1.0",
     "react-native-image-progress": "^1.1.1",
     "react-native-largelist-v3": "^3.0.15",

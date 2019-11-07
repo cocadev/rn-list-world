@@ -41,6 +41,12 @@ const MyList = [
       'DraggableScreen',
     ]
   },
+  {
+    title: 'react-native-grid-list',
+    items: [
+      'GridListScreen',
+    ]
+  },
 ]
 
 export default class Login extends Component {
