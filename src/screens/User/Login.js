@@ -35,12 +35,7 @@ const MyList = [
       'DefaultImageGrid'
     ]
   },
-  {
-    title: 'react-native-masonry',
-    items: [
-      'MasonryList',
-    ]
-  }
+ 
 ]
 
 export default class Login extends Component {

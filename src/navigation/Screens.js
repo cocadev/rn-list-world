@@ -19,7 +19,6 @@ import InfiniteScroll from '../screens/CustomLoadMore/InfiniteScroll';
 import FastImageExample from '../screens/FastImage/FastImageExamples';
 import FastImageGrid from '../screens/FastImage/FastImageGrid';
 import DefaultImageGrid from '../screens/FastImage/DefaultImageGrid';
-import MasonryList from '../screens/react-native-masonry/MasonryList';
 
 const LoginNavigator = createStackNavigator({
 
@@ -45,7 +44,6 @@ const LoginNavigator = createStackNavigator({
   FastImageGrid: { screen: FastImageGrid, navigationOptions: () => ({ header: null })},
   DefaultImageGrid: { screen: DefaultImageGrid, navigationOptions: () => ({ header: null })},
 
-  MasonryList: { screen: MasonryList, navigationOptions: () => ({ header: null })},
 
 });
 
