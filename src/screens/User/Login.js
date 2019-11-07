@@ -45,6 +45,7 @@ const MyList = [
     title: 'react-native-grid-list',
     items: [
       'GridListScreen',
+      'GridSimple',
     ]
   },
 ]

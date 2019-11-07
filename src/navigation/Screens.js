@@ -21,6 +21,7 @@ import FastImageGrid from '../screens/FastImage/FastImageGrid';
 import DefaultImageGrid from '../screens/FastImage/DefaultImageGrid';
 import DraggableScreen from '../screens/Draggable/draggable';
 import GridListScreen from '../screens/react-native-grid-list/GridListScreen';
+import GridSimple from '../screens/react-native-grid-list/GridSimple';
 
 const LoginNavigator = createStackNavigator({
 
@@ -48,6 +49,7 @@ const LoginNavigator = createStackNavigator({
 
   DraggableScreen: { screen: DraggableScreen, navigationOptions: () => ({ header: null })},
   GridListScreen: { screen: GridListScreen, navigationOptions: () => ({ header: null })},
+  GridSimple: { screen: GridSimple, navigationOptions: () => ({ header: null })},
 
 
 });
