@@ -32,6 +32,11 @@ import HorizontalAdvancedFlatList from '../screens/react-native-pagination/Horiz
 import HorizontalPagedFlatListExample from '../screens/react-native-pagination/HorizontalPagedFlatListExample';
 import VerticalAdvancedFlatList from '../screens/react-native-pagination/VerticalAdvancedFlatList';
 import VerticalBasicFlatList from '../screens/react-native-pagination/VerticalBasicFlatList';
+import {BouncesAndScrollEnabledExample} from '../screens/react-native-spring-scrollview/BouncesAndScrollEnabledExample';
+import {ComplexExample} from '../screens/react-native-spring-scrollview/ComplexExample';
+import {InputExample} from '../screens/react-native-spring-scrollview/InputExample';
+import {RefreshAndLoadingExample2} from '../screens/react-native-spring-scrollview/RefreshAndLoadingExample';
+import {ScrollToAndOnScrollExample} from '../screens/react-native-spring-scrollview/ScrollToAndOnScrollExample';
 
 const LoginNavigator = createStackNavigator({
   Login: {
@@ -164,6 +169,26 @@ const LoginNavigator = createStackNavigator({
   },
   VerticalBasicFlatList: {
     screen: VerticalBasicFlatList,
+    navigationOptions: () => ({header: null}),
+  },
+  BouncesAndScrollEnabledExample: {
+    screen: BouncesAndScrollEnabledExample,
+    navigationOptions: () => ({header: null}),
+  },
+  ComplexExample: {
+    screen: ComplexExample,
+    navigationOptions: () => ({header: null}),
+  },
+  InputExample: {
+    screen: InputExample,
+    navigationOptions: () => ({header: null}),
+  },
+  RefreshAndLoadingExample2: {
+    screen: RefreshAndLoadingExample2,
+    navigationOptions: () => ({header: null}),
+  },
+  ScrollToAndOnScrollExample: {
+    screen: ScrollToAndOnScrollExample,
     navigationOptions: () => ({header: null}),
   },
 });

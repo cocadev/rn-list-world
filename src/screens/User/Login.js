@@ -65,6 +65,16 @@ const MyList = [
       'HorizontalPagedFlatListExample',
     ],
   },
+  {
+    title: 'react-native-spring-scrollview',
+    items: [
+      'BouncesAndScrollEnabledExample',
+      'ComplexExample',
+      'InputExample',
+      'RefreshAndLoadingExample2',
+      'ScrollToAndOnScrollExample',
+    ],
+  },
 ];
 
 export default class Login extends Component {
