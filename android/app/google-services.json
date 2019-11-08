@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "480338154804",
+    "firebase_url": "https://redpulsemobilernv2.firebaseio.com",
+    "project_id": "redpulsemobilernv2",
+    "storage_bucket": "redpulsemobilernv2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480338154804:android:410bdae183ad92fd0e0161",
+        "android_client_info": {
+          "package_name": "com.redpulsemobilernv2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "480338154804-jgaohftuj5kmpnsuperia3kv1fsd3hfi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9Ht9DmRbmixrmxh5UZriH7TUmS0Sd_j8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "480338154804-jgaohftuj5kmpnsuperia3kv1fsd3hfi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

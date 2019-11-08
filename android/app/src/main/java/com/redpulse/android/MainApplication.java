@@ -1,4 +1,4 @@
-package com.redpulse.android;
+package com.redpulsemobilernv2;
 
 import android.app.Application;
 

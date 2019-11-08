@@ -1,4 +1,4 @@
-package com.redpulse.android;
+package com.redpulsemobilernv2;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
