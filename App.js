@@ -19,3 +19,5 @@ export default class App extends Component {
     return <NavigationContainer />;
   }
 }
+
+//https://backendless.com/setup-push-notifications-in-react-native-android/
