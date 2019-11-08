@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "axios": "^0.19.0",
+    "backendless": "^5.4.4",
     "es6-promise": "^4.2.8",
     "faker": "^4.1.0",
     "lottie-react-native": "^3.2.1",
@@ -35,6 +36,7 @@
     "react-native-largelist-v3": "^3.0.15",
     "react-native-orzhtml-listview": "^1.0.4",
     "react-native-pagination": "^1.5.5",
+    "react-native-push-notification": "^3.1.9",
     "react-native-spring-scrollview": "^2.0.23",
     "react-native-status-bar-height": "^2.4.0",
     "react-native-super-grid": "^3.1.1",
